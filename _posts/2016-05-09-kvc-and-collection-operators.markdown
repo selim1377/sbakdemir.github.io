@@ -12,7 +12,7 @@ image2: /assets/images/homepage.jpg
 KVC, known as Key-Value Coding, is a coding style where properties and methods of an object are accessible via string identifiers. For much comprehensive detail and definition for key-value coding, read [the apple docs.][kvc_apple_docs]
 
 In NSFoundation framework, any NSObject subclass automatically conforms [`NSKeyValueCoding`][nskvc_apple_docs] protocol.
-To derive a better understanding of kvc,I personally prefer to dive in code examples.
+To derive a better understanding of KVC, I personally prefer to dive in code examples.
 
 ## Simple KVC
 
@@ -35,7 +35,7 @@ The above example works just because the class `Person` has **accessor methods/p
 //this class is not key value coding-compliant for the key fullname.
 
 ```
-Another method `valueForKeyPath:` allows to access **nested properties** on the receiver object:
+Another method, `valueForKeyPath:` allows to access **nested properties** on the receiver object:
 
 ```objective_c
 [object valueForKey:@"property.anotherProperty.yetAnother"];
@@ -58,7 +58,7 @@ If we had an *employees* array for instance, we could call
 ```objective_c
 [employees valueForKeyPath:@"phone.model"]; // [@"Apple",@"Samsung", @"HTC",@"Blackberry"]
 ```
-and get another array including the object specified in the path.
+and get another array including phone models of employees.
 
 ## Collection Operators
 
