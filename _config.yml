@@ -30,6 +30,8 @@ paginate:	5
 
 url: "http://selim1377.github.io" # the base hostname & protocol for your site
 baseurl: "http://selim1377.github.io"
+#url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
+#baseurl: "http://localhost:4000"
 #used to display twitter cards
 twitter_handle: '@sbakdemir'
 
